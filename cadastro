@@ -1,0 +1,38 @@
+Algoritmo "cadastro"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+
+Var
+
+    nome, endereco, cidade, cpf, rg, idade, nomedopai, nomedamae, peso, rendabruta: caracter
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+
+
+		escreva("digite seu nome: ")
+		leia(nome)
+		escreva("digite seu endereco: ")
+		leia(endereco)
+		escreva("digite nome da sua cidade: ")
+		leia(cidade)
+		escreva("digite seu cpf: ")
+		leia(cpf)
+		escreva("digite seu rg: ")
+		leia(rg)
+		escreva("digite sua idade: ")
+		leia(idade)
+		escreva("digite nome do seu pai: ")
+		leia(nomedopai)
+		escreva("escreva nome da sua mãe: ")
+      leia(nomedamae)
+		escreva("digite seu peso: ")
+		leia(peso)
+		escreva("digte sua renda bruta: ")
+		leia(rendabruta)
+
+      escreval ("Nome ", nome , " endereço ", " cidade ", cidade , " CPF ", cpf , " RG ", rg , " idade ", idade , " nome do pai ", nomedopai , " nome da mãe ", nomedamae , " peso ", peso , " renda bruta ", rendabruta)
+
+Fimalgoritmo
