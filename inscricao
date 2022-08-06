@@ -1,0 +1,23 @@
+Algoritmo "inscricao"
+
+Var
+
+    nome,cpf,endereco,rg: caracter
+    altura: Real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+
+		escreva("digite seu nome: ")
+		leia(nome)
+		escreva("digite seu cpf: ")
+		leia(cpf)
+		escreva("digite seu rg: ")
+		leia(rg)
+		escreva("digite sua altura: ")
+		leia(altura)
+		escreva("digite sua endereco: ")
+		leia(endereco)
+		escreva("Olá" , nome, " seu cpf é " , cpf , " seu rg é " , rg , " sua altura é " , altura , " seu endereco é " , endereco)
+
+Fimalgoritmo
