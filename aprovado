@@ -1,0 +1,34 @@
+programa {
+     
+	funcao inicio() {
+        cadeia nome
+        inteiro numerodefaltas
+        real n1, n2, media 
+        escreva(" digite o nome do aluno: ")
+        leia(nome)
+        escreva("digite sua primeira nota: ")
+        leia(n1)
+        escreva(" digite sua segunda nota: ")
+        leia(n2)
+        escreva(" digite o numero de faltas: ")
+        leia(numerodefaltas)
+        media= (n1+n2)/2
+        escreva ("media: ",media) 
+        se (media>=7 e numerodefaltas<3) 
+        {
+            escreva("\nParabéns aluno aprovado! ")
+        }
+        se (media<7) 
+        {
+            escreva("\nAluno reprovado! " )
+        }
+        se (numerodefaltas>=3)
+        {
+            escreva("\n",nome, " voce foi reprovado! ")
+        }
+        
+        
+	}
+	
+	
+}
