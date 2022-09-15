@@ -1,0 +1,35 @@
+Escreva ("é um veículo aquático?")
+Se("sim")Entao
+   Escreva("é um veículo coberto de água?")
+   Se("sim")Entao
+   Escreva("o veículo é um submarino")
+   Fimse
+   
+        Senao
+        Escreva("o veículo navega na água?")
+        Se("sim")Entao
+        Escreva("o veículo possui vela?")
+        Se("sim")Entao
+        Escreva("o veículo é um barco")
+        Fimse
+        
+   Senao
+        Escreva("o veículo tem motor?")
+        Se("sim")Entao
+        Escreva("o veículo é alto?")
+        Se("sim")Entao
+        Escreva("o veículo é um navio")
+        
+        Senao
+        Escreva("o veículo pode ser descoberto?")
+        Se("sim")Entao
+        Escreva("o veículo é uma lancha")
+        Fimse
+        Fimse
+        
+   Fimse
+   
+   
+Fimse
+
+      
