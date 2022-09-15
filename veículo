@@ -1,0 +1,45 @@
+
+   Algoritmo "Categoria"
+
+   Var
+      qtdRodas, qtdPessoas: inteiro;
+      pesoBrutoKg: real;
+      
+   Início
+         escreva("Digite a quantidade de rodas do veículo: ")
+         leia(qtdRodas)
+         escreva("Digite a quantidade de pessoas no veículo: ")
+         leia (qtdPessoas)
+         escreva("Digite o peso bruto do veículo: ")
+         leia(pesoBrutoKg)
+         
+         escreval()
+         
+         se (qtdRodas = 2) OU (qtdRodas = 3) então
+            escreva("Categoria A!")
+            
+            senao
+                 se (qtdRodas = 4) E (qtdPessoas <= 8) E (pesoBrutoKg <= 3500) entao
+                    escreva ("Categoria B!")
+                    
+                    senao
+
+                         se (qtdRodas >= 4) E (pesoBrutoKg > 3500) E (pesoBrutoKg < 6000) entao
+                            escreva("Categoria C!")
+                            
+                            senao
+                            
+                                 se (qtdRodas >= 4) E (qtdPessoas > 8) entao
+                                    escreva("Categoria D!")
+                                    
+                                     senao
+                                     
+                                          se (qtdRodas >= 4) E (pesoBrutoKg > 6000) entao
+                                             escreva("Categoria E!")
+                                             
+                                  fimse
+                        fimse
+                fimse
+         fimse
+ fimse
+                                          
