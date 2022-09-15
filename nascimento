@@ -1,0 +1,15 @@
+nome = input('Digite seu nome completo')
+
+while True:
+    try:
+        ano = int(input('Digite o ano em que você nasceu (entre 1922 e 2021): '))
+        if ano < or ano > 2021:
+            print('Ano inválido, digite um ano no intervalo de tempo estabelecido.')
+        else:
+            idade = 2022 - ano
+            print(f'{nome}: {idade} anos ao final de 2022.')
+            break
+            
+    except:
+        print('Ano inválido, digite em números.')
+        
