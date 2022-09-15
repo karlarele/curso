@@ -1,0 +1,16 @@
+def calculadora(valor1, valor2, operacao):
+    if (operacao == 1):
+        return valor1+valor2
+    elif(operacao == 2):
+        return valor1-valor2
+    elif(operacao == 3):
+        return valor1*valor2
+    elif(operacao == 4):
+        return valor1/valor2
+        
+        else:
+        
+            return 0
+            
+print(calculadora(10, 5, 1))
+        
