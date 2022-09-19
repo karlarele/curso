@@ -1,0 +1,95 @@
+votoCandidato_Y = 0
+votoCandidato_Z = 0
+votoBranco = 0
+
+
+votacao=True
+while votacao:
+    voto = ''
+    confirma = 'n'
+    candidato_X = 889
+    candidato_Y = 847
+    candidato_Z = 515
+    while(confirma== 'n'):
+        print("Insira o seu voto:")
+        voto = int(input())
+        while((type(voto) is int) !=True):
+        print("Confirma o seu voto(s ou n): "+str(voto)
+        confirma = input()
+        if(confirma== 's'):
+            print("Voto Confirmado")
+            
+        if(voto==candidato_X):
+            votosCandidato_X +=1
+        elif (voto == candidato_Y):
+            votosCandidato_Y +=1
+        elif (voto == candidato_Z):
+            votosCandidato_Z +=1
+        else:
+            votosBranco +=1
+            
+        print("Deseja finalizar a votação(s ou n)?")
+        reposta = input()
+        
+        while resposta!= 's' and resposta!='n':
+            print(Resposta inválida, responda com 's' ou 'n'")
+            resposta==input()
+            
+        if resposta=="s"
+            votacao= false
+        elif resposta=="n":
+            votacao = True
+            
+print("candidato X: "+ str(votosCandidato_X))
+print("candidato Y: "+ str(votosCandidato_Y))
+print("candidato Z: "+ str(votosCandidato_Z))
+print("Brancos e Nulos: "+ str(votosBranco))votoCandidato_Y = 0
+votoCandidato_Z = 0
+votoBranco = 0
+
+
+votacao=True
+while votacao:
+    voto = ''
+    confirma = 'n'
+    candidato_X = 889
+    candidato_Y = 847
+    candidato_Z = 515
+    while(confirma== 'n'):
+        print("Insira o seu voto:")
+        voto = int(input())
+        while((type(voto) is int) !=True):
+        print("Confirma o seu voto(s ou n): "+str(voto)
+        confirma = input()
+        if(confirma== 's'):
+            print("Voto Confirmado")
+            
+        if(voto==candidato_X):
+            votosCandidato_X +=1
+        elif (voto == candidato_Y):
+            votosCandidato_Y +=1
+        elif (voto == candidato_Z):
+            votosCandidato_Z +=1
+        else:
+            votosBranco +=1
+            
+        print("Deseja finalizar a votação(s ou n)?")
+        reposta = input()
+        
+        while resposta!= 's' and resposta!='n':
+            print(Resposta inválida, responda com 's' ou 'n'")
+            resposta==input()
+            
+        if resposta=="s"
+            votacao= false
+        elif resposta=="n":
+            votacao = True
+            
+print("candidato X: "+ str(votosCandidato_X))
+print("candidato Y: "+ str(votosCandidato_Y))
+print("candidato Z: "+ str(votosCandidato_Z))
+print("Brancos e Nulos: "+ str(votosBranco))votoCandidato_Y = 0
+votoCandidato_Z = 0
+votoBranco = 0
+
+
