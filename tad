@@ -1,0 +1,79 @@
+   class numcomplex:
+   
+      def_init_(self,soma,subtracao,multiplicacao,divisao):
+      
+        self.soma = soma
+        
+        sel.subtraca o= subtracao
+        
+        self.multiplicacao = multiplicacao
+        
+        self.divisao = divisao
+        
+      pass
+      
+      x = 3 +4j
+      
+      y = complex(2,7)
+      
+      z = complex(-19,6)
+      
+      calculo = numcomplex(x+y+z,x-y-z*y*,(x/y)/z)
+      
+      print('soma=',calculo.soma,'\n','subtracao=',calculo.subtracao,'\n',
+      'multiplicacao=',calculo.multiplicao,'\n','divisao=',calculo.divisao,'\n')
+      
+      print('x real:',x.real)
+
+      print('y real:',y.real)
+      
+      print('z real:',z.real)
+      
+      print('x img:',x.imag)
+      
+      print('y img:',y.imag)
+      
+      print('z img:',z.imag)
+      
+      
+      
+   class numcomplex:
+   
+      def_init_(self,soma,subtracao,multiplicacao,divisao):
+      
+        self.soma = soma
+        
+        sel.subtraca o= subtracao
+        
+        self.multiplicacao = multiplicacao
+        
+        self.divisao = divisao
+        
+      pass
+      
+      x = 3 +4j
+      
+      y = complex(2,7)
+      
+      z = complex(-19,6)
+      
+      calculo = numcomplex(x+y+z,x-y-z*y*,(x/y)/z)
+      
+      print('soma=',calculo.soma,'\n','subtracao=',calculo.subtracao,'\n',
+      'multiplicacao=',calculo.multiplicao,'\n','divisao=',calculo.divisao,'\n')
+      
+      print('x real:',x.real)
+
+      print('y real:',y.real)
+      
+      print('z real:',z.real)
+      
+      print('x img:',x.imag)
+      
+      print('y img:',y.imag)
+      
+      print('z img:',z.imag)
+      
+      
+      
+   
