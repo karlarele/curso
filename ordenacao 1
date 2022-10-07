@@ -1,0 +1,16 @@
+   vetor = [24, 26, 21, 27, 22, 33, 1,80, 10,11]
+
+  def bubble_sort(vetor):
+      elementos = len(vetor) - 1 #9
+      ordenado = False
+      
+      while not ordenado: #Enquanto for verdadeiro
+            ordenado = True
+            for i in range(eementos):
+                if (vetor[i] > vetor[i+1]):
+                   vetor[i], vetor[i+1] = vetor[i+1], vetor[i]
+                   ordenado = False
+      return
+      
+  resultado = bubble_sort(vetor)
+  print(resultado)
