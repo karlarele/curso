@@ -1,0 +1,27 @@
+Algoritmo
+var
+vet :vetor[0...30] de inteiro
+a, n :inteiro
+i, j :inteiro
+
+Inicio
+para i de 0 ate 30 faca
+  	escreval ("digite um numero")
+              leia(n)
+              vet[i]<-num
+              
+fimpara
+para i de 0 ate 1 faca
+     para j de i+1 ate 2 faca
+          se i mode 2 !=0 entao
+               se vet[i]>vet[j] entao
+                        a<-vet[j]
+                        vet[j]<-vet[i]
+                        vet[i]<-a
+               fimse
+               
+          fimse
+          
+     fimpara
+     
+fim para
