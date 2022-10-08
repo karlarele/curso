@@ -1,0 +1,23 @@
+      class pessoa
+      
+         def_init_(self, nome, registro):
+         
+           self.nome = nome
+           
+           self.registro = registro
+           
+         def setnome(self):
+         
+            self.nome = nome
+            
+            
+         def registro(self):
+
+            cont = cont+1
+            
+            
+       pessoa1 = pessoa('mauricio',1)
+       
+       pessoa2 = pessoa('jonas',2)
+       
+       pessoa3 = pessoa('joaquim',3)
