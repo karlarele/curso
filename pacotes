@@ -1,0 +1,24 @@
+   package br.nome.atribuicao1;
+   
+   public class atribuicaoOne {
+       public static void metodo() {
+           System.out.println("Primeiro pacote!");
+       }
+       
+       public static void main(String[] args) {
+           metodo1();
+       }
+   }
+   
+   package br.nome.atribuicao2;
+   
+   public class atribuicaoTwo {
+       public static void metodo2() {
+           System.out.println(" Segundo pacote!" );
+       }
+       
+       public static void main(String[] args) {
+           metodo2();
+       }
+   }
+       
