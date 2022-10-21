@@ -1,0 +1,27 @@
+- compr
+
+public class MyClass {
+    public static void main(String args[]) {
+        
+        System.out.println("ANA".length());
+    }
+}
+ 
+ - maiusc
+ 
+ public class MyClass {
+     public static void main(String args[]) {
+         
+        Sistem.out.println("ana".toUpperCase()); 
+     }
+ }
+ 
+ 
+ -minusc
+ 
+ public class MyClass {
+     public static void main(String args[]) {
+         
+         Sistem.out.println("ANA".toLowerCase());
+     }
+ }
