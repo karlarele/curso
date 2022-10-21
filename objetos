@@ -1,0 +1,39 @@
+		
+	Objetos materiais:
+	
+	Avião
+
+	(métodos): ligar(), voar(), freiar()
+	(atributos): cor: Branco, peso: 40t, modelo: Boeing 737
+
+	
+	Geladeira
+
+	(métodos): ligar(), gelar(), armazenar()
+	
+	(atributos): cor: Azul, marca: Consul, preço:R$ 4000,00
+
+
+
+	Objetos abstratos:
+
+	Música
+	
+	(métodos): tocar(), pausar(), repetir()
+
+	(atributos): nomeMúsica: Sozinho, nomeArtista: Caetano Veloso, gênero: MPB
+
+	
+	Streaming
+
+	(métodos): AssistirVídeo(), PausarVídeo(), FecharVídeo()
+
+	(atributos): nome: Amazon Prime, tipo: Empresa privada, gênero: Incorporation
+
+
+	 
+	
+	
+
+
+	
