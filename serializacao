@@ -1,0 +1,44 @@
+import 
+    
+    public class        implements
+        private 
+        private double      //peso corporal
+        private double      //altura em metros
+        
+        public                  double      double
+          this       =
+          this    =
+          this      =
+          
+          
+        public
+          return
+          
+          
+        public void
+            this        =
+            
+            
+        public double
+          return
+          
+          
+        public void     float
+          this    =
+          
+          
+        public double
+          return        /       *
+          
+          
+        public
+          double        =
+          if        < 18.5
+              return "baixo peso"
+          else if       < 25.0
+          
+          
+          return "peso adequado"
+      else if          < 30.0
+              return "sobrepeso"
+           else return "obesidade"
