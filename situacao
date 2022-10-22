@@ -1,0 +1,18 @@
+import java.lang.Exception;
+import java.util.Scanner;
+
+public class Excecoes {
+    public static void main(String[] args) {
+        try (Scanner teste = new Scanner(System.in)) {
+            try {
+                System.out,println("Digite um valor inteiro: ");
+                int num = teste.nextInt();
+                System.out.println("Digite um valor inteiro: ");
+                int num2 = teste.nexInt();
+                System.out.println(num + " + " + num2 + " = " + (num + num2));
+            } catch (Exception ex) {
+                System.out.println("ERRO - Valordigitado não é um número inteiro!");
+            }
+        }
+    }
+}
