@@ -1,0 +1,28 @@
+	programa 
+{
+
+      funcao inicio() 
+      {
+           real n1,n2,n3,media
+           escreva("Programa para somar 3 notas \n")
+           escreva("Informe sua primeira nota:")
+           leia(n1)
+           escreva("Informe sua segunda nota:")
+           leia(n2)
+           escreva("Informe sua terceira nota:")
+           leia(n3)
+           media = (n1+n2+n3/3)
+           escreva("Média Geral .:\t"+media+"\n")
+
+           se(media>=7 e media <9){
+                escreva("Situação-:\tAprovado! \n")
+           }
+           senao se(media>=9){
+                escreva("Situação-:\tAprovado com louvor!\n")
+           }
+           senao se(media>=3 e media <7){
+                escreva("Situação-:\tReprovado!\n")
+
+    
+    }
+}
