@@ -1,0 +1,81 @@
+public class banco {
+
+      //atributos da classe
+      String numero;
+      String agencia;
+      boolean especial;
+      double limite especial;
+      double saldo;
+
+      boolean realizarSaque (double quantiaASacar) {
+          //tem saldo na conta?
+          if (saldo >= quantiaASacar) {
+              saldo -= quantiaASacar;
+              return true;
+          }else{//não tem saldo na conta
+              if (especial) {
+                  //verificar se o limite especial tem saldo;
+                  double limite = limiteEspecial + saldo;
+                  if(limite >= quantiaASacar) {
+                      saldo -= quantiaASacar;
+                      return true;
+                  }else{
+                      return false;
+                  }
+                  }else{
+                          return false; // não é especial e não tem saldo suficiente
+                          }
+          }
+        }
+    void depositar (double valorDepositado) {
+        saldo += valorDepositado;
+    }
+    void consultarSaldo() {
+        System.out.println ("Saldo atual da conta = " + saldo); 
+     }
+    
+}
+
+
+
+public class TesteConta {
+    public static void main(String [] args) {
+        ContaCorrente conta = new ContaCorrente();
+        conta.numero = "304050;"
+        conta.agencia = "1020"
+        conta.especial = true;
+        conta.limiteEspecial = 500
+        conta.saldo = 1000;
+
+        System.out.println("Saldo da conta" + conta.numero + " = " + conta.saldo);
+
+        boolean saqueEfetuado = conta.realizarSaque(10);
+
+        if (saqueEfetuado) {
+            System.out.println("Saque efetuado com sucesso!");
+            conta.consultarSaldo();
+        }else{
+            System.out.println("Não foi possível realiar saque. Saldo insuficiente.");
+        }
+
+        saqueEfetuado = conta.realizarSaque(00);
+        if(saqueEfetuado) {
+            System.out.println("Saque efetuado com sucesso!");
+            conta.consultarSaldo();
+        }else{
+            System.out.println("Não foi possível realizar saque. Saldo insuficiente.");
+        }
+
+        System.out.println("Realizando depósito de 500 reais...");
+        conta.depositar(500);
+        conta.consultarSaldo();
+
+
+        }
+  
+}
+
+
+
+	
+}
