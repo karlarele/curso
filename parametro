@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+  float media(int x, int y)
+  { float m;
+    m = (x + y)/2.0;
+    return(m);
+
+  }
+
+int main()
+
+  {
+
+  int i, num1,num2;
+  float med, soma=0;
+for(i=1; i<=20; i++)
+{ printf("Digite um número: \n");
+  scanf("%d",&num1);
+  printf("Digite outro número: \n");
+  scanf("%d",&num2);
+  med=media(num1,num2);
+  printf("Média = %.2f",med);
+  soma = soma + med;
+
+}
+
+
+printf("\n Soma das médias = %.2f", soma);
+system("pause");
+return(0);
+
+}
