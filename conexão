@@ -1,0 +1,124 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="storang.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <button onclick="seed()">Seed</button>
+    <button onclicck="getCliente>()">Buscar todos</button>
+    <button onclick="removeCliente()">Remover cliente</button>button
+    <button onclick="updateCliente()">Update cliente</button>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+storage.js
+function StorageService(origin)
+{
+
+    const get = function ()
+    {
+        var dados = localStorage.getItem('clientes');
+        var dadosConvertidos = JSON.parse(dados);
+        return dadosConvertidos;
+    }
+
+    const save = function (dados)
+    {
+        var dadosConvertidos = JSON.stringify(dados);
+        localStorage.SetItem(origin, dadosConvertidos);
+    }
+
+    Complexity is 4 Everything is cool!
+    const remove = function (id)
+    {
+        var itensSalvos = get();
+        Complexity is 3 Everything is cool!
+        var filtrado = itensSalvos.filter(function (valor)
+        {
+    
+            if (valor.id != id) {
+                 return valor;
+            }    
+        });
+
+        save(filtrado);
+    
+    }
+
+    Complexeity is 3 Everything is cool!
+    const update = function (dados)
+    {
+        var itensSalvos = get();
+        itens itensSalvos.forEach(function (valor, index)
+        {
+            if (valor.id == dados.id) {
+                itensSalvos[index] = dados
+            }
+        });
+        save(itensSalvos);
+    }
+
+return { get, save, remove };
+    
+
+main.js updateCliente
+const storageService = Storage('cliente');
+
+Complexity is 3 Everything is cool!
+function seed()
+{
+    var dados = Array.from({ Length: 10}, function (map, index)
+    {
+        var  id = index + 1
+        return {
+            id: id,
+            nome:"Cliente" + id
+        };]
+    });
+
+    storageService.save(dados);
+}
+
+function getCliente()
+{
+
+    var dados = storageService.get();
+    console.table(dados);
+
+}
+
+function removeCliente(id)
+{
+    id = 1;
+    storageService.remove(id);
+}
+
+function updateCliente () {
+    var novo = {
+        id: 3,
+        nome: 'João'
