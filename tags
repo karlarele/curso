@@ -1,0 +1,33 @@
+<!DOCTIPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</header>
+<body>
+    <div class="principal">
+      <form>
+        <label>Email</label>
+        <input type="text">
+        <label>Senha</label>
+        <input type="text">
+        <button>entrar</button>
+      </form>
+      <div>
+    <div class="caixas">
+        <div class="caixa1">
+            <div class="nome">
+                karla
+            </div>
+    </div>
+    <div class="caixa2">
+            caixa2
+    </div>
+    </div>
+</body>
+</html>
+
+
