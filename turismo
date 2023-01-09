@@ -1,0 +1,116 @@
+<!DOCTIPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TouristPlacesinEurope</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+   <header>
+    <div class="logo">
+      <img src="/assets/logo-plane.svg" alt=">
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">TorreEiffel</a></li>
+          <li><a href="#">Coliseu</a></li>
+          <li><a href="#">MuseudoLouvre</a></li>
+          <li><a href="#">BigBen</a></li>
+          <li><a href="#">PalaciodeVersales</a></li>
+      </ul>
+    </div>
+
+    <div class="button">
+      <button>
+       <a href="#">Register</a>
+      <button>
+    </div>
+
+ <main>
+      <div class="top-main">
+        <div class="title">
+      <h1>
+      </h1>
+    
+</body>
+</html>
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  --color-text: #F1F1F1;
+  --color-subtitle: #dfd9d9;
+  --color-highlight: #e2792d;
+  --color-button: #4343e9;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(30px 10px 4px rgb(0, 0, 0, 0.5));
+}
+
+header ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header ul li {
+  font-size: 16px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: var(--color-highlight);
+  border-bottom: 1px solid var(--color-button);
+}
+
+button {
+  border: none;
+  background-color: var(--color-button);
+  color: var(--color-text);
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.5s;
+}
