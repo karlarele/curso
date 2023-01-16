@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilha do Rodeadouro</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+        
+        header {
+            background-image: url("https://visit.petrolina.br/wp-content/uploads/2017/10/o-que-fazer-ilha-do-rodeadouro-topo.jpg");
+            width: 100vw;
+            height: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: black;
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1em 1em 0.5em rgba(0, 0, 0, 0.911);
+            font-weight: bold;
+        }
+
+        .menu ul a{
+            color: white;
+            display: flex;
+            margin-top: 20px;
+            font-weight: bolder;
+            word-spacing: 2px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .menu ul a li{
+            color: white;
+            display: flex;
+            font-weight: bolder;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 600px;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .container p {
+            padding: 10px;
+            color: gray;
+        }
+
+        footer {
+            background-color: black;
+            color: azure;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ilha do Rodeadouro </h1>
+        <div class="menu">
+            <ul>
+                <a href="oqfazer.html">
+                    <li> HOME&nbsp/&nbsp </li>
+                    <li> O QUE FAZER &nbsp/&nbsp </li>
+                    <li> Ilha do Rodeadouro </li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="container">
+            <Ilha no Rio São Francisco com bares e restaurantes simples, contudo com vista maravilhosa e ainda com possibilidade de banho no Rio com agua bem limpinha, travessia em barcos disponíveis no local(bem rápido).</p>
+        </div>
+    </main>
+
+</body>
+</html>
