@@ -1,0 +1,61 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+            <p>
+                Olá karla
+            </p>
+            <a
+                className="App-Link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Learn React
+            </a>
+        </header>
+    </div>
+    );
+}
+
+export default App;
+
+
+
+
+import React from 'react';
+
+
+function Menu() {
+    return (
+      <div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+        </div>
+      </div>
+    );
+}
+
+export default Menu;
+
+
+
+
+
+import React from 'react';
+
+const Conteudo = () => {
+    return (
+          <div class="conteudo"><h2>Aui vai meu conteudo!<>/h2></div>
+    );
+}
+
+
+export default Conteudo;
