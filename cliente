@@ -1,0 +1,66 @@
+sing System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Web.Script.Services;
+using System.Xml.Serialiation;
+using System.Data;
+
+namespace WS.Clientes
+{
+    /// <sumary>
+    /// Sumary description for Cliente
+    /// </sumary>
+    [WebService(Namespace = http://tempuri.org/)]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.CompnentModel.ToolboItem(false)]
+    // To allow this Web Service to be called from script, using ASP.NET AJAX
+    uncomment the following line.
+    // [System.Web.Script.Services.ScriptService]
+    public class Clientes : System.Web.Services
+    {
+        [WebMethod]
+        [ScripMethod(ResponseFormat = ResponseFormat.Xml)] 
+        public xml ObterClientesPorNome(string nome)
+        {
+            //Criando lista de clientes
+            List<cliente> clientes = new List<Cliente>();
+
+            Cliente cliente;
+
+            //Obtendo todos os clientes
+            DataTable dteCliente = DadosClientes();
+            //Populando a lista  de clientes
+            foreach (DataRow row in dteCliente.Rows)
+            {
+                cliente = new Cliente();
+                cliente.nom_cliente = row[nom_cliente].ToString();
+                cliente.end_cliente = row[end_cliente].ToStrin();
+                cliente.tel_cliente = row[tel_cliente].ToString();
+                clientes.Add(cliente);
+            }
+
+            //Estrutura do XML do cliente
+            public class Cliente
+            {
+                [XmlElement(nome)]
+                public string nom_cliente { get; set; }
+
+                [XmlElement(endereco)]
+                public string end_cliente { get; set; }
+
+                [XmlElement(telefone)]
+                public string tel_cliente { get; set; }
+            }
+
+            //Classe que recebe a lista de cliente e retorna o XML
+            [XmlRoot(xml)]
+            public class Xml
+            {
+                public xml() {}
+                public xml (List<Cliente> clientes)
+                {
+                    this.clientes = clientes;
+            }
+    
