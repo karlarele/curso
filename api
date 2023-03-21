@@ -1,0 +1,10 @@
+Basicamente, uma API — que em português significa Interface de Programação de Aplicações — representa uma requisição que permite a troca de dados entre sistemas, possibilitando a integração entre eles. Essa comunicação pode ser feita entre diferentes tipos de sistemas, independentemente de sua plataforma e de seu desenvolvimento, permitindo várias operações, como leitura, inclusão, alteração e exclusão de dados.
+
+Esse padrão foi criado em 2000 por Roy Fielding (que também participou do desenvolvimento do protocolo HTTP) ao realizar sua tese de doutorado. Entre os seus objetivos, estava o de utilizar o protocolo HTTP para a comunicação de dados, proporcionando mais agilidade às aplicações e as tornando mais confiáveis e fáceis de escalar. O padrão REST estabelece os seguintes princípios:
+
+cliente/servidor: representa a separação entre a aplicação do lado cliente (navegador) e do lado do servidor (aplicação back-end);
+interface uniforme: é formado por mais quatro restrições que determinam a identificação e a representação de recursos, mensagens autodescritivas e hipermídia;
+stateless: as requisições não podem manter estado, ou seja, o tratamento das alterações dos dados da seção é realizado pela aplicação cliente;
+cache: a requisição deve ter a capacidade de determinar se os dados devem ser armazenados em cache, que deve ser feito na aplicação cliente;
+camadas: a aplicação deve ser desenvolvida em camadas hierárquicas, pois proporciona diversos benefícios como facilidade para escalar, de manutenção, entre outros;
+code on demand: possibilita a transmissão de códigos do servidor para serem utilizados pela aplicação cliente.
