@@ -1,0 +1,42 @@
+from . import db
+
+class Book(db.Model):
+    _tablename_ = 'books'
+    isbn = db.Column(db.Integer, primary_key=True)
+    author = db.Column(db.String(100), nullable=False)
+    title =db.Column(db.String(100),nullable=False)
+    price = db.Column(db.Float)
+
+    def to_json(self):
+        return {
+            'isbn': self.isbn,
+            'author': self.author,
+            'title': self.title,
+            'price' : self.price
+        }
+    [    
+        {
+            "author": "Ezz"
+            "isbn" : 1,
+            "price": 0.0,
+            "title": "Cleaner Python"
+        },
+        {
+            "author": "Ahmed",
+            "isbn": 2,
+            "price": 10.99,
+            "title": "Python"
+        }
+    ]
+
+    from . import db
+    # ...
+
+    @app.route("/book/<int:isbn>", methods=["DELETE"])
+    def delete_ book(isbn):
+        book = Book.query.get(isbn)
+        if book is None:
+            abort(404)
+        db.session.delete(book)
+        db.session.comit()
+        return jsonify({'result' : True})
