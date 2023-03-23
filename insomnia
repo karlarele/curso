@@ -1,0 +1,39 @@
+brew cash install insomnia
+sudo apt-get update
+sudo apt- get insomnia-reststall insomnia
+choco install insomnia-rest-api-client
+
+[
+   {
+      "city": "São Paulo",
+      "state": "São Paulo"
+      "_id": "1"
+
+    },
+    {
+       "city": "Belo Horizonte",
+       "state": "Mins Gerais",
+       "_id": "2"
+    },
+    {
+       "city": "Fortaleza"
+       "state": "Ceará",
+       "_id": "3"
+    }
+]
+
+{
+   "city": "Cuiabá",
+   "state": "Mato Grosso",
+   "_id": "60MMd8wrTkg7aEq"
+}
+
+{
+   "id": "1",
+   "city": "Porto Alegre",
+   "state": "Rio Grande do Sul"
+}
+
+{
+   "message": "Cidade excluída com sucesso"
+}
